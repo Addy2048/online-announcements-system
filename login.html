@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <style>
+      html,
+      body {
+        box-sizing: border-box;
+        padding: 0px;
+        margin: 0px;
+        height: 100%;
+        width: 100%;
+        font-family: "Nunito Sans", sans-serif;
+      }
+      *::after,
+      *::before {
+        box-sizing: inherit;
+      }
+      /* Add some style to the page */
+      body {
+        background-color: #f1f1f1;
+      }
+      .login-form {
+        width: 350px;
+        height: 350px;
+        margin: auto;
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+      }
+      .login-form h1 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .login-form label {
+        display: block;
+        font-size: 14px;
+        color: #333;
+        margin-bottom: 10px;
+      }
+      .login-form input[type="text"],
+      .login-form input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        box-sizing: border-box;
+        font-size: 14px;
+        color: #333;
+      }
+      .login-form button {
+        width: 100%;
+        background-color: black;
+        color: #ffffff;
+        font-size: 14px;
+        padding: 10px;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+      }
+      .login-form button:hover {
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      style="
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      "
+    >
+      <form class="login-form" action="login_control.php" method="POST">
+        <h1>Login</h1>
+        <label for="username">Phone:</label>
+        <input
+          autocomplete="false"
+          type="text"
+          id="phone"
+          name="phone"
+          style="margin-bottom: 20px"
+          placeholder="eg. 0762208209"
+        />
+        <label for="password">Password:</label>
+        <input
+          autocomplete="false"
+          type="password"
+          id="password"
+          name="password"
+          style="margin-bottom: 20px"
+        />
+        <button type="submit" style="margin-bottom: 20px">Log in</button>
+      </form>
+    </div>
+  </body>
+</html>
